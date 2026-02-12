@@ -26,7 +26,7 @@ in2csv --skip-lines 1 -f fixed --schema ./schema/MASTER_schema.csv ./input/MASTE
 
 
 echo "Stacking MASTER chunks into MASTER.csv..."
-csvstack MASTER-*.csv > output/MASTER.csv
+csvstack MASTER-*.csv > output/registration.csv
 
 #remove intermediate files
 rm -v MASTER-*.csv 

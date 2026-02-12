@@ -10,7 +10,7 @@ This project provides a bash script to convert the FAA Releasable Aircraft Datab
 ## Prerequisites
 Ensure the following tools are installed on your system:
 - **[csvkit](https://csvkit.readthedocs.io/)**: For fixed-width conversion (`pip install csvkit`).
-- **gnumeric**: For the `ssconvert` utility (used to generate the Excel workbook).
+- **gnumeric**: (optional) For the `ssconvert` utility (used to generate the Excel workbook).
 
 ## Project Structure
 - `input/`: Place your raw FAA `.txt` files here.
@@ -24,12 +24,53 @@ Ensure the following tools are installed on your system:
 1. Download the latest database zip from the [FAA website](https://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry/releasable_aircraft_download).
 2. Unzip the contents into the `input` directory of this repository.
 
+your input folder should now look like
+```
+└── input
+    ├── ACFTREF.txt
+    ├── DEALER.txt
+    ├── DOCINDEX.txt
+    ├── ENGINE.txt
+    ├── MASTER-1.txt
+    ├── MASTER-2.txt
+    ├── MASTER-3.txt
+    ├── MASTER-4.txt
+    ├── MASTER-5.txt
+    ├── MASTER-6.txt
+    ├── MASTER-7.txt
+    ├── MASTER-8.txt
+    ├── MASTER-9.txt
+    └── RESERVED.txt
+```
+
+
+
 ### 2. Run the Conversion
 Execute the script from the root of the project:
 ```bash
 chmod +x convert_to_csv.sh
 ./convert_to_csv.sh
 ```
+your output folder should now look like
+
+```
+└── output
+    ├── ACFTREF.csv
+    ├── DEALER.csv
+    ├── DOCINDEX.csv
+    ├── ENGINE.csv
+    ├── MASTER.csv
+    ├── RESERVED.csv
+    └── output.xlsx
+```
+
+File names become tab names, and are renamed for readability
+`ACFTREF.csv` becomes `aircraft.csv`
+`DEALER.csv` becomes `dealer.csv`
+`DOCINDEX.csv` becomes `document_index.csv`
+`ENGINE.csv` becomes `engine.csv`
+`MASTER.csv` becomes `registration.csv`
+`RESERVED.csv` becomes `reserved_n_number.csv`
 
 ### 3. Check Outputs
 After the script completes:

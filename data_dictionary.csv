@@ -1,15 +1,15 @@
-Filename,Element,Position Location in Record,Number of Positions,Descriptions,Column Name
-MASTER,N-Number,01-May,5,Identification number assigned to aircraft.,n_number
-MASTER,Serial Number,Jul-36,30,The complete aircraft serial number assigned to the aircraft by the manufacturer.,serial_number
-MASTER,Aircraft Mfr Model,38-44,7,"A code assigned to the aircraft Code manufacturer, model and series.
+Source,Tab,Element,Position Location in Record,Number of Positions,Descriptions,Column Name
+MASTER,registration,N-Number,01-May,5,Identification number assigned to aircraft.,n_number
+MASTER,registration,Serial Number,Jul-36,30,The complete aircraft serial number assigned to the aircraft by the manufacturer.,serial_number
+MASTER,registration,Aircraft Mfr Model,38-44,7,"A code assigned to the aircraft Code manufacturer, model and series.
 Positions (38-40) - Manufacturer Code
 Positions (41-42) - Model Code
 Positions (43-44) - Series Code",aircraft_mfr_model_code
-MASTER,Engine Mfr Mode Code,46-50,5,"A code assigned to the engine manufacturer and model.
+MASTER,registration,Engine Mfr Mode Code,46-50,5,"A code assigned to the engine manufacturer and model.
 Positions (46-48) - Manufacturer Code
 Positions (49-50) - Model Code",engine_mfr_mode_code
-MASTER,Year Mfr,52-55,4,Year manufactured.,year_mfr
-MASTER,Type Registrant,57,1,"1 - Individual
+MASTER,registration,Year Mfr,52-55,4,Year manufactured.,year_mfr
+MASTER,registration,Type Registrant,57,1,"1 - Individual
 2 - Partnership
 3 - Corporation
 4 - Co-Owned
@@ -17,29 +17,16 @@ MASTER,Type Registrant,57,1,"1 - Individual
 7 - LLC
 8 - Non Citizen Corporation
 9 - Non Citizen Co-Owned
-Registrant’s Name 59-108 50
-The first registrant’s name which appears
-on the Application for Registration, AC
-Form 8050-1.",type_registrant
-MASTER,Street1,110-142,33,"The street address which appears on the
-Application for Registration, AC Form
-8050-1 or the latest street address
-reported.",street_1
-MASTER,Street2,144-176,33,"The 2nd street address which appears on
-Record
-the Application for Registration, AC,
-Form 8050-1, or the latest street address
-reported.",street_2
-MASTER,Registrant’s City,178-195,18,"The city name which appears on the
-Application for Registration, AC Form
-8050-1 or the latest address reported.",city
-MASTER,Registrant’s State,197-198,2,"The state name which appears on the
-Application for Registration, AC Form
-8050-1 or the latest address reported.",state
-MASTER,Registrant’s Zip Code,200-209,10,"The postal Zip Code which appears on the
-Application for Registration, AC Form
-8050-1 or the latest address reported.",zip_code
-MASTER,Registrant’s Region,211,1,"1 - Eastern
+Registrant's Name 59-108 50
+The first registrant's name which appears on the Application for Registration, AC Form 8050-1.",type_registrant
+MASTER,registration,Street1,110-142,33,"The street address which appears on the Application for Registration, AC Form
+8050-1 or the latest street address reported.",street_1
+MASTER,registration,Street2,144-176,33,"The 2nd street address which appears on Record the Application for Registration, AC,
+Form 8050-1, or the latest street address reported.",street_2
+MASTER,registration,Registrant's City,178-195,18,"The city name which appears on the Application for Registration, AC Form 8050-1 or the latest address reported.",city
+MASTER,registration,Registrant's State,197-198,2,"The state name which appears on the Application for Registration, AC Form 8050-1 or the latest address reported.",state
+MASTER,registration,Registrant's Zip Code,200-209,10,"The postal Zip Code which appears on the Application for Registration, AC Form 8050-1 or the latest address reported.",zip_code
+MASTER,registration,Registrant's Region,211,1,"1 - Eastern
 2 - Southwestern
 3 - Central
 4 - Western-Pacific
@@ -49,17 +36,13 @@ MASTER,Registrant’s Region,211,1,"1 - Eastern
 C- Great Lakes
 E - New England
 S - Northwest Mountain",region
-MASTER,County Mail,213-215,3,"A code representing the county which
-appears on the Application for
-Registration.",county_mail
-MASTER,Country Mail,217-218,2,"A code representing the country which
-appears on the Application for
-Registration.",country_mail
-MASTER,Last Activity Date,220-227,8,Format YYYY/MM/DD,last_activity_date
-MASTER,Certificate Issue Date,229-236,8,"Format YYYY/MM/DD
+MASTER,registration,County Mail,213-215,3,A code representing the county which appears on the Application for Registration.,county_mail
+MASTER,registration,Country Mail,217-218,2,A code representing the country which appears on the Application for Registration.,country_mail
+MASTER,registration,Last Activity Date,220-227,8,Format YYYY/MM/DD,last_activity_date
+MASTER,registration,Certificate Issue Date,229-236,8,"Format YYYY/MM/DD
 Certification requested
 and uses:",certificate_issue_date
-MASTER,A - Airworthiness,238,1,"The airworthiness certificate class which
+MASTER,registration,A - Airworthiness,238,1,"The airworthiness certificate class which
 Classification Code is reported on the Application for
 Airworthiness, FAA Form 8130-6.
 1 - Standard
@@ -72,7 +55,7 @@ Record
 7 - Primary
 8 - Special Flight Permit
 9 - Light Sport",airworthiness_classification
-MASTER,B - Approved,239-247,9,"The approved operations (up to a
+MASTER,registration,B - Approved,239-247,9,"The approved operations (up to a
 Operation Codes maximum of six) which are reported on
 the Application for Airworthiness, FAA
 Form 8130-6.
@@ -124,7 +107,7 @@ Development
 With CFR
 246-247 2 Positions are blank
 Provisional 238 1",approved_operation_codes
-MASTER,239,1,1,"- Class I
+MASTER,registration,239,1,1,"- Class I
 2 - Class II
 240-247 8 Positions are blank
 Multiple 238 1
@@ -164,7 +147,7 @@ L - Lighter than Air
 P - Power-Parachute
 W- Weight-Shift-Control
 240-247 8 Positions are blank",n_number
-MASTER,Type Aircraft,249,1,"1 - Glider
+MASTER,registration,Type Aircraft,249,1,"1 - Glider
 2 - Balloon
 3 - Blimp/Dirigible
 4 - Fixed wing single engine
@@ -175,7 +158,7 @@ MASTER,Type Aircraft,249,1,"1 - Glider
 9 - Gyroplane
 H - Hybrid Lift
 O - Other",type_aircraft
-MASTER,Type Engine,251-252,2,"0 - None
+MASTER,registration,Type Engine,251-252,2,"0 - None
 1 - Reciprocating
 2 - Turbo-prop
 3 - Turbo-shaft
@@ -187,7 +170,7 @@ MASTER,Type Engine,251-252,2,"0 - None
 9 - Unknown
 10 - Electric
 11 - Rotary",type_engine
-MASTER,Status Code,254-255,2,"A - The Triennial Aircraft Registration
+MASTER,registration,Status Code,254-255,2,"A - The Triennial Aircraft Registration
 form was mailed and has not been
 returned by the Post Office
 D - Expired Dealer
@@ -197,7 +180,7 @@ Registration was revoked by
 enforcement action
 M - Valid - Aircraft assigned to the
 manufacturer under the
-manufacturer’s Dealer Certificate
+manufacturer's Dealer Certificate
 N - Non-citizen Corporations which
 have not returned their flight hour
 reports
@@ -270,31 +253,31 @@ Renewal
 Renewal
 29 - Registration Expired - Pending
 Cancellation",status_code
-MASTER,Mode S Code,257-264,8,Aircraft Transponder Code,mode_s_code
-MASTER,Fractional Ownership,266,1,"Y - Registration has fractional ownership
+MASTER,registration,Mode S Code,257-264,8,Aircraft Transponder Code,mode_s_code
+MASTER,registration,Fractional Ownership,266,1,"Y - Registration has fractional ownership
 blank - Registration is not fractional
 owned",fractional_ownership
-MASTER,Airworthiness Date,268-275,8,Date of Airworthiness,airworthiness_date
-MASTER,Other Name 1,277-326,50,1st co-owner or partnership name,other_name_1
-MASTER,Other Name 2,328-377,50,2nd co-owner or partnership name,other_name_2
-MASTER,Other Name 3,379-428,50,3rd co-owner or partnership name,other_name_3
-MASTER,Other Name 4,430-479,50,4th co-owner or partnership name,other_name_4
-MASTER,Other Name 5,481-530,50,5TH co-owner or partnership name,other_name_5
-MASTER,Expiration Date,532-539,8,Format YYYY/MM/DD,expiration_date
-MASTER,Unique ID,541-548,8,Unique Identification Number,unique_id
-MASTER,Kit Mfr,550-579,30,Kit Manufacturer Name,kit_mfr
-MASTER,Kit Model,581-600,20,"Kit Model Name
+MASTER,registration,Airworthiness Date,268-275,8,Date of Airworthiness,airworthiness_date
+MASTER,registration,Other Name 1,277-326,50,1st co-owner or partnership name,other_name_1
+MASTER,registration,Other Name 2,328-377,50,2nd co-owner or partnership name,other_name_2
+MASTER,registration,Other Name 3,379-428,50,3rd co-owner or partnership name,other_name_3
+MASTER,registration,Other Name 4,430-479,50,4th co-owner or partnership name,other_name_4
+MASTER,registration,Other Name 5,481-530,50,5TH co-owner or partnership name,other_name_5
+MASTER,registration,Expiration Date,532-539,8,Format YYYY/MM/DD,expiration_date
+MASTER,registration,Unique ID,541-548,8,Unique Identification Number,unique_id
+MASTER,registration,Kit Mfr,550-579,30,Kit Manufacturer Name,kit_mfr
+MASTER,registration,Kit Model,581-600,20,"Kit Model Name
 Record",kit_model
-MASTER,Mode S Code Hex,602-611,10,Mode S Code in Hexidecimal Format,mode_s_code_hex
-ACFTREF,"Aircraft Manufacturer,",01-Jul,7,"A code assigned to the aircraft
+MASTER,registration,Mode S Code Hex,602-611,10,Mode S Code in Hexidecimal Format,mode_s_code_hex
+ACFTREF,aircraft,"Aircraft Manufacturer,",01-Jul,7,"A code assigned to the aircraft
 Model and Series Code manufacturer, model and series.
 Positions (1-3) - Manufacturer Code
 Positions (4-5) - Model Code
 Positions (6-7) - Series Code",mfr_model_series_code
-ACFTREF,Aircraft Manufacturer,Sep-38,30,"Name of the aircraft manufacturer.
+ACFTREF,aircraft,Aircraft Manufacturer,Sep-38,30,"Name of the aircraft manufacturer.
 Name",mfr_name
-ACFTREF,Model Name,40-59,20,Name of the aircraft model and series.,model_name
-ACFTREF,Type Aircraft,61,1,"1 - Glider
+ACFTREF,aircraft,Model Name,40-59,20,Name of the aircraft model and series.,model_name
+ACFTREF,aircraft,Type Aircraft,61,1,"1 - Glider
 2 - Balloon
 3 - Blimp/Dirigible
 4 - Fixed wing single engine
@@ -305,7 +288,7 @@ ACFTREF,Type Aircraft,61,1,"1 - Glider
 9 - Gyroplane
 H - Hybrid Lift
 O - Other",type_aircraft
-ACFTREF,Type Engine,63-64,2,"0 - None
+ACFTREF,aircraft,Type Engine,63-64,2,"0 - None
 1 - Reciprocating
 2 - Turbo-prop
 3 - Turbo-shaft
@@ -317,34 +300,34 @@ ACFTREF,Type Engine,63-64,2,"0 - None
 9 - Unknown
 10 - Electric
 11 - Rotary",type_engine
-ACFTREF,Aircraft Category Code,66,1,"1 - Land
+ACFTREF,aircraft,Aircraft Category Code,66,1,"1 - Land
 2 - Sea
 3 - Amphibian",category_code
-ACFTREF,Builder Certification,68,1,"0 - Type Certificated
+ACFTREF,aircraft,Builder Certification,68,1,"0 - Type Certificated
 Code 1 - Not Type Certificated
 2 - Light Sport
 Record",builder_certification_code
-ACFTREF,Number of Engines,70-71,2,Number of engines on the aircraft,number_of_engines
-ACFTREF,Number of Seats,73-75,3,Maximum number of seats in the aircraft.,number_of_seats
-ACFTREF,Aircraft Weight,77-83,7,"Aircraft maximum gross take off weight
+ACFTREF,aircraft,Number of Engines,70-71,2,Number of engines on the aircraft,number_of_engines
+ACFTREF,aircraft,Number of Seats,73-75,3,Maximum number of seats in the aircraft.,number_of_seats
+ACFTREF,aircraft,Aircraft Weight,77-83,7,"Aircraft maximum gross take off weight
 in pounds.
 1 - Up to 12,499
 2 - 12,500 - 19,999
 3 - 20,000 and over.
 4 - UAV up to 55",aircraft_weight
-ACFTREF,Aircraft Cruising Speed,85-88,4,"Aircraft average cruising speed in miles
+ACFTREF,aircraft,Aircraft Cruising Speed,85-88,4,"Aircraft average cruising speed in miles
 per hour. This data element is not present
 on all records.",cruising_speed
-ACFTREF,TC Data Sheet,90-105,15,Type Certificate Data Sheet,tc_data_sheet
-ACFTREF,TC Data Holder,107-157,50,Type Certificate Data Holder,tc_holder
-ENGINE,Engine Manufacturer,01-May,5,"A code assigned to the engine
+ACFTREF,aircraft,TC Data Sheet,90-105,15,Type Certificate Data Sheet,tc_data_sheet
+ACFTREF,aircraft,TC Data Holder,107-157,50,Type Certificate Data Holder,tc_holder
+ENGINE,engine,Engine Manufacturer,01-May,5,"A code assigned to the engine
 and Model Code manufacturer and model.
 Positions (1-3) - Manufacturer Code
 Positions (4-5) - Model Code",engine_mfr_mode_code
-ENGINE,Engine Manufacturer,Jul-16,10,"The name of the engine manufacturer.
+ENGINE,engine,Engine Manufacturer,Jul-16,10,"The name of the engine manufacturer.
 Name",engine_mfr_name
-ENGINE,Engine Model Name,18-30,13,The name of the engine model,engine_model_name
-ENGINE,Type Engine,32-33,2,"0 - None
+ENGINE,engine,Engine Model Name,18-30,13,The name of the engine model,engine_model_name
+ENGINE,engine,Type Engine,32-33,2,"0 - None
 1 - Reciprocating
 2 - Turbo-prop
 3 - Turbo-shaft
@@ -356,15 +339,15 @@ ENGINE,Type Engine,32-33,2,"0 - None
 9 - Unknown
 10 - Electric
 11 - Rotary",type_engine
-ENGINE,Engine Horsepower,35-39,5,"Horsepower for engines types 1, 2, 3, 7, 8",horsepower
-ENGINE,Pounds of Thrust,41-46,6,"Thrust for engine types 4, 5, 6",pounds_of_thrust
-DOCINDEX,Type Collateral,1,1,"1 - Aircraft
+ENGINE,engine,Engine Horsepower,35-39,5,"Horsepower for engines types 1, 2, 3, 7, 8",horsepower
+ENGINE,engine,Pounds of Thrust,41-46,6,"Thrust for engine types 4, 5, 6",pounds_of_thrust
+DOCINDEX,document_index,Type Collateral,1,1,"1 - Aircraft
 2 - Engine
 3 - Propeller
 4 - Spare Parts
 5 - Document
 9 - Unidentified",type_collateral
-DOCINDEX,Collateral,Mar-39,37,"Contents are based on type collateral
+DOCINDEX,document_index,Collateral,Mar-39,37,"Contents are based on type collateral
 code, as follows:
 1 - Aircraft N-Number
 2 - Engine Make, Model and Serial
@@ -376,37 +359,17 @@ Number
 number
 9 - “UNIDENTIFIED” or a partial
 description of the document",collateral
-DOCINDEX,Name of Party,41-90,50,"The FAA has established a procedure in
-accordance with 49 U.S.C. § 44114(b) by
-which private aircraft owners can request
-certain personally identifiable
-information, such as names and
-addresses, be withheld from broad
-dissemination or display on a publicly
-available FAA website. The Party Names
-previously found on this page are not
-available at this time due to the
-implementation of these changes in public
-availability of information associated
-with registered aircraft.",name_of_party
-DOCINDEX,Document ID,92-103,12,"This is a unique number assigned to a
-document image.",document_id
-DOCINDEX,Document Receipt Date,105-112,8,"Month, day and year document being
-indexed was filed for recordation with the
-Aircraft Registry. Recorded as
-YYYYMMDD.",receipt_date
-DOCINDEX,Processing Date,114-121,8,"Date record was entered into file.
-YYMMDD format.",processing_date
-DOCINDEX,Correction Date,123-130,8,"Date of latest correction. Blank unless
-corrections have been made to record.
-YYYYMMDD format.
+DOCINDEX,document_index,Name of Party,41-90,50,"The FAA has established a procedure in accordance with 49 U.S.C. § 44114(b) by which private aircraft owners can request certain personally identifiable information, such as names and addresses, be withheld from broad dissemination or display on a publicly available FAA website. The Party Names previously found on this page are not available at this time due to the implementation of these changes in public availability of information associated with registered aircraft.",name_of_party
+DOCINDEX,document_index,Document ID,92-103,12,This is a unique number assigned to a document image.,document_id
+DOCINDEX,document_index,Document Receipt Date,105-112,8,"Month, day and year document being indexed was filed for recordation with the Aircraft Registry. Recorded as YYYYMMDD.",receipt_date
+DOCINDEX,document_index,Processing Date,114-121,8,Date record was entered into file. YYMMDD format.,processing_date
+DOCINDEX,document_index,Correction Date,123-130,8,"Date of latest correction. Blank unless corrections have been made to record. YYYYMMDD format.
 Record",correction_date
-DOCINDEX,Correction Identification,132,1,"Denotes if record has been added or
-corrected.
+DOCINDEX,document_index,Correction Identification,132,1,"Denotes if record has been added or corrected.
 A - Record was added
 C - Record was changed",correction_id
-DOCINDEX,Serial Id,134-163,30,Serial Number for engine or propeller.,serial_id
-DOCINDEX,Doc Type,165-167,3,"Type of Document being indexed
+DOCINDEX,document_index,Serial Id,134-163,30,Serial Number for engine or propeller.,serial_id
+DOCINDEX,document_index,Doc Type,165-167,3,"Type of Document being indexed
 BOS - Evidence of Ownership
 S/A - Security Conveyance/Lien
 REL - Lien Release
@@ -417,15 +380,15 @@ CRT - Court Documents
 Minor: Collateral
 Minor: Date of Receipt
 Minor: Name of Party",document_type
-RESERVED,N-Number,01-May,5,N-Number,n_number
-RESERVED,Registrant,Jul-56,50,Reserving Party Name,registrant
-RESERVED,Street Address,58-90,33,The address of the reserving party.,street_1
-RESERVED,Street2,92-124,33,2nd street if applicable.,street_2
-RESERVED,City,126-143,18,City/Town name,city
-RESERVED,State,145-146,2,Two digit state code,state
-RESERVED,Zip Code,148-157,10,Postal zip code,zip_code
-RESERVED,Reserve Date,159-166,8,Format YYYYMMDD,reserve_date
-RESERVED,Type Reservation,168-169,2,"Two digit code take from Type
+RESERVED,reserved_n_number,N-Number,01-May,5,N-Number,n_number
+RESERVED,reserved_n_number,Registrant,Jul-56,50,Reserving Party Name,registrant
+RESERVED,reserved_n_number,Street Address,58-90,33,The address of the reserving party.,street_1
+RESERVED,reserved_n_number,Street2,92-124,33,2nd street if applicable.,street_2
+RESERVED,reserved_n_number,City,126-143,18,City/Town name,city
+RESERVED,reserved_n_number,State,145-146,2,Two digit state code,state
+RESERVED,reserved_n_number,Zip Code,148-157,10,Postal zip code,zip_code
+RESERVED,reserved_n_number,Reserve Date,159-166,8,Format YYYYMMDD,reserve_date
+RESERVED,reserved_n_number,Type Reservation,168-169,2,"Two digit code take from Type
 Reservation.
 AA - Reserved - no fee
 A - Fee paid, notice for expiration sent
@@ -442,59 +405,59 @@ expiration notice sent
 CN - N-Number change, Expire Notice
 Sent
 CE - N-Number change Expired",type_reservation
-RESERVED,Expiration Notice Date,171-178,8,Format YYYYMMDD,expiration_notice_date
-RESERVED,N-Number for Change,180-184,5,Changed N-Number,n_number_change
-RESERVED,Purge Date,185-192,8,"Format YYYYMMDD
+RESERVED,reserved_n_number,Expiration Notice Date,171-178,8,Format YYYYMMDD,expiration_notice_date
+RESERVED,reserved_n_number,N-Number for Change,180-184,5,Changed N-Number,n_number_change
+RESERVED,reserved_n_number,Purge Date,185-192,8,"Format YYYYMMDD
 RECORD 192 characters (Record is comma delimited)",purge_date
-DEALER,Certificate Number,01-Jul,7,"Format is ‘YY-NNNN’ where ‘YY’ is
-year. ‘NNNN’ is a unique four position
+DEALER,dealer,Certificate Number,01-Jul,7,"Format is ‘YY-NNNN' where ‘YY' is
+year. ‘NNNN' is a unique four position
 numeric field with leading zeros.",certificate_number
-DEALER,Ownership,9,1,"One position numeric field. As follows:
+DEALER,dealer,Ownership,9,1,"One position numeric field. As follows:
 1 - Individual
 2 - Partnership
 3 - Corporation
 4 - Co-Ownership
 7 - LLC
 8 - Non Citizen Corporation",type_ownership
-DEALER,Certificate Issue Date,Nov-18,8,Format is YYYYMMDD.,certificate_issue_date
-DEALER,Expiration Date,20-27,8,Format is YYYYMMDD.,expiration_date
-DEALER,Expiration Flag,29,1,"Contains ‘*’ for all expired records. An
+DEALER,dealer,Certificate Issue Date,Nov-18,8,Format is YYYYMMDD.,certificate_issue_date
+DEALER,dealer,Expiration Date,20-27,8,Format is YYYYMMDD.,expiration_date
+DEALER,dealer,Expiration Flag,29,1,"Contains ‘*' for all expired records. An
 expired record remains on file for 90
 days.",expiration_notice_flag
-DEALER,Cumulative Issue Count,31-34,4,"Cumulative count of total Dealer’s
+DEALER,dealer,Cumulative Issue Count,31-34,4,"Cumulative count of total Dealer's
 Aircraft Registration Certificates issued
 for a Certificate Number.",certificate_issue_count
-DEALER,Name,36-85,50,Aircraft Dealer’s Name.,name
-DEALER,Street1 Address,87-119,33,Mailing street address for applicant.,street_1
-DEALER,Street2 Address,121-153,33,2nd mailing street address for applicant.,street_2
-DEALER,City,155-172,18,City of applicant.,city
-DEALER,State,174-175,2,State or foreign country of applicant.,state
-DEALER,Zip Code,177-186,10,"Ten position alpha field or ‘FORGN’ for
+DEALER,dealer,Name,36-85,50,Aircraft Dealer's Name.,name
+DEALER,dealer,Street1 Address,87-119,33,Mailing street address for applicant.,street_1
+DEALER,dealer,Street2 Address,121-153,33,2nd mailing street address for applicant.,street_2
+DEALER,dealer,City,155-172,18,City of applicant.,city
+DEALER,dealer,State,174-175,2,State or foreign country of applicant.,state
+DEALER,dealer,Zip Code,177-186,10,"Ten position alpha field or ‘FORGN' for
 foreign countries.",zip_code
-DEALER,Other Names Count,188-189,2,Number of other names.,other_names_count
-DEALER,Other Name 1,191-240,50,1st co-owner or partnership name,other_name_1
-DEALER,Other Name 2,242-291,50,2nd co-owner or partnership name,other_name_2
-DEALER,Other Name 3,293-342,50,"3rd co-owner or partnership name
+DEALER,dealer,Other Names Count,188-189,2,Number of other names.,other_names_count
+DEALER,dealer,Other Name 1,191-240,50,1st co-owner or partnership name,other_name_1
+DEALER,dealer,Other Name 2,242-291,50,2nd co-owner or partnership name,other_name_2
+DEALER,dealer,Other Name 3,293-342,50,"3rd co-owner or partnership name
 Record",other_name_3
-DEALER,Other Name 4,344-393,50,4th co-owner or partnership name,other_name_4
-DEALER,Other Name 5,395-444,50,5TH co-owner or partnership name,other_name_5
-DEALER,Other Name 6,446-495,50,6th co-owner or partnership name,other_name_6
-DEALER,Other Name 7,497-546,50,7th co-owner or partnership name,other_name_7
-DEALER,Other Name 8,548-597,50,8th co-owner or partnership name,other_name_8
-DEALER,Other Name 9,599-648,50,9th co-owner or partnership name,other_name_9
-DEALER,Other Name 10,650-699,50,10th co-owner or partnership name,other_name_10
-DEALER,Other Name 11,701-750,50,11th co-owner or partnership name,other_name_11
-DEALER,Other Name 12,752-801,50,12th co-owner or partnership name,other_name_12
-DEALER,Other Name 13,803-852,50,13th co-owner or partnership name,other_name_13
-DEALER,Other Name 14,854-903,50,14th co-owner or partnership name,other_name_14
-DEALER,Other Name 15,905-954,50,15TH co-owner or partnership name,other_name_15
-DEALER,Other Name 16,956-1005,50,16th co-owner or partnership name,other_name_16
-DEALER,Other Name 17,1007-1056,50,17th co-owner or partnership name,other_name_17
-DEALER,Other Name 18,1058-1107,50,18th co-owner or partnership name,other_name_18
-DEALER,Other Name 19,1109-1158,50,19th co-owner or partnership name,other_name_19
-DEALER,Other Name 20,1160-1209,50,20th co-owner or partnership name,other_name_20
-DEALER,Other Name 21,1211-1260,50,21st co-owner or partnership name,other_name_21
-DEALER,Other Name 22,1262-1311,50,22nd co-owner or partnership name,other_name_22
-DEALER,Other Name 23,1313-1362,50,23rd co-owner or partnership name,other_name_23
-DEALER,Other Name 24,1364-1413,50,24th co-owner or partnership name,other_name_24
-DEALER,Other Name 25,1415-1464,50,25th co-owner or partnership name,other_name_25
+DEALER,dealer,Other Name 4,344-393,50,4th co-owner or partnership name,other_name_4
+DEALER,dealer,Other Name 5,395-444,50,5TH co-owner or partnership name,other_name_5
+DEALER,dealer,Other Name 6,446-495,50,6th co-owner or partnership name,other_name_6
+DEALER,dealer,Other Name 7,497-546,50,7th co-owner or partnership name,other_name_7
+DEALER,dealer,Other Name 8,548-597,50,8th co-owner or partnership name,other_name_8
+DEALER,dealer,Other Name 9,599-648,50,9th co-owner or partnership name,other_name_9
+DEALER,dealer,Other Name 10,650-699,50,10th co-owner or partnership name,other_name_10
+DEALER,dealer,Other Name 11,701-750,50,11th co-owner or partnership name,other_name_11
+DEALER,dealer,Other Name 12,752-801,50,12th co-owner or partnership name,other_name_12
+DEALER,dealer,Other Name 13,803-852,50,13th co-owner or partnership name,other_name_13
+DEALER,dealer,Other Name 14,854-903,50,14th co-owner or partnership name,other_name_14
+DEALER,dealer,Other Name 15,905-954,50,15TH co-owner or partnership name,other_name_15
+DEALER,dealer,Other Name 16,956-1005,50,16th co-owner or partnership name,other_name_16
+DEALER,dealer,Other Name 17,1007-1056,50,17th co-owner or partnership name,other_name_17
+DEALER,dealer,Other Name 18,1058-1107,50,18th co-owner or partnership name,other_name_18
+DEALER,dealer,Other Name 19,1109-1158,50,19th co-owner or partnership name,other_name_19
+DEALER,dealer,Other Name 20,1160-1209,50,20th co-owner or partnership name,other_name_20
+DEALER,dealer,Other Name 21,1211-1260,50,21st co-owner or partnership name,other_name_21
+DEALER,dealer,Other Name 22,1262-1311,50,22nd co-owner or partnership name,other_name_22
+DEALER,dealer,Other Name 23,1313-1362,50,23rd co-owner or partnership name,other_name_23
+DEALER,dealer,Other Name 24,1364-1413,50,24th co-owner or partnership name,other_name_24
+DEALER,dealer,Other Name 25,1415-1464,50,25th co-owner or partnership name,other_name_25
