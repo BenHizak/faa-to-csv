@@ -1,0 +1,11 @@
+column,start,length
+type_collateral,0,1
+collateral,2,37
+name_of_party,40,50
+document_id,91,12
+receipt_date,104,8
+processing_date,113,8
+correction_date,122,8
+correction_id,131,1
+serial_id,133,30
+document_type,164,3

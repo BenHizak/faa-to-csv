@@ -1,0 +1,13 @@
+column,start,length
+n_number,0,5
+registrant,6,50
+street_1,57,33
+street_2,91,33
+city,125,18
+state,144,2
+zip_code,147,10
+reserve_date,158,8
+type_reservation,167,2
+expiration_notice_date,170,8
+n_number_change,179,5
+purge_date,185,8

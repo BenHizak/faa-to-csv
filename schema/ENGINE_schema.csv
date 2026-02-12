@@ -1,0 +1,7 @@
+column,start,length
+engine_mfr_mode_code,0,5
+engine_mfr_name,6,10
+engine_model_name,17,13
+type_engine,31,2
+horsepower,34,5
+pounds_of_thrust,40,6

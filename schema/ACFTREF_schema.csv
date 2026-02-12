@@ -1,0 +1,14 @@
+column,start,length
+mfr_model_series_code,0,7
+mfr_name,8,30
+model_name,39,20
+type_aircraft,60,1
+type_engine,62,2
+category_code,65,1
+builder_certification_code,67,1
+number_of_engines,69,2
+number_of_seats,72,3
+aircraft_weight,76,7
+cruising_speed,84,4
+tc_data_sheet,89,16
+tc_holder,106,50
