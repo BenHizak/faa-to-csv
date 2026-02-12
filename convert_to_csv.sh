@@ -9,6 +9,8 @@ if ! command -v in2csv &> /dev/null; then
     exit 1
 fi
 
+
+
 echo "Beginning FAA data conversion using schema files..."
 
 # 1. Convert Master Parts and Stack
@@ -53,5 +55,9 @@ echo "Conversion complete."
 
 # rm MASTER-*.csv ACFTREF.csv ENGINE.csv DEALER.csv DOCINDEX.csv RESERVED.csv
 
-cd output
-ssconvert --merge-to=output.xlsx *.csv ../data_dictionary.csv
+if ! command -v ssconvert &> /dev/null; then
+    echo "Error: ssconvert is not installed. Please install it with 'sudo apt install gnumeric' or equivalent for your OS."
+    exit 1
+fi
+
+ssconvert --merge-to=output/output.xlsx ./output/*.csv ../data_dictionary.csv
